@@ -18,7 +18,7 @@ Hi Eva! This is Liz from UCSB
 library(tidyverse)
 ```
 
-`head(),`tail() and \`dim()
+`head(),`tail() and `dim()
 
 ```{r}
 #| include: false
