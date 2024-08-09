@@ -9,14 +9,16 @@ editor_options:
   chunk_output_type: console
 ---
 
+Hi Eva! This is Liz from UCSB
 ## 
+
 ```{r}
 #| message: false
 # load libraries ----
 library(tidyverse)
 ```
 
-`head(), `tail() and `dim()
+`head(),`tail() and \`dim()
 
 ```{r}
 #| include: false
@@ -29,8 +31,8 @@ tail(starwars)
 dim(starwars)
 ```
 
-Create a ggplot(scatterplot) of character mass on the y axis and height on the x axis.
-- update the color of the points so that color changes based on the value of `mass` 
+Create a ggplot(scatterplot) of character mass on the y axis and height on the x axis. - update the color of the points so that color changes based on the value of `mass`
+
 ```{r}
 #| echo: false
 
@@ -41,10 +43,10 @@ ggplot(data=starwars, aes(x= height, y = mass, color = mass)) + geom_point() +
 
 ```
 
-- create a histogram of character heights 
-- update the fill color (`fill`) to purple and the outside border line of each histogram bin (`color`) to orange 
-- update axis labels
-- updae your code chunk options so that only your code and output graph appear in rendered document (no warnings or messages)
+-   create a histogram of character heights
+-   update the fill color (`fill`) to purple and the outside border line of each histogram bin (`color`) to orange
+-   update axis labels
+-   updae your code chunk options so that only your code and output graph appear in rendered document (no warnings or messages)
 
 ```{r}
 #| echo: false 
@@ -62,4 +64,5 @@ ggplot(data=starwars, aes(x= height)) +
 sw_height_mean <- round(mean(starwars$height, na.rm = TRUE), 3)
 
 ```
+
 the mean height of all starwars characters is `r sw_height_mean`
